@@ -1,0 +1,21 @@
+body{
+    background-color: aqua;
+    padding: 15rem;
+    max-width: 500px;
+    margin: auto;
+
+}
+.form{
+    background-attachment: fixed;
+    background-color: rgb(0, 238, 255);
+    display: block;
+  width: 100%;
+  margin-bottom: 0.25rem;
+    
+}
+.input{
+    
+    border: 1px solid #a1a1a1;
+    font: inherit;
+    border-radius: 2px;
+}
