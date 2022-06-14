@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group chat app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form onsubmit="addNewMssg(event)">
+        <section class="chat__section">
+            <div class="brand">
+                <img height="40" src="sms.png" alt="">
+                <h1>Group chat app</h1>
+            </div>
+            <div class="message__area"></div>
+            <div >
+                <textarea id="textarea" name="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea> 
+                <button  class="btn">send</button>
+            </div>
+           
+        </section>
+        
+    </form>
+    
+    
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./sms.js"></script>
+</body>
+
+</html>

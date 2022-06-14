@@ -9,18 +9,16 @@ function login(e) {
 
     }
     console.log(loginDetails)
-    axios.post('http://34.210.48.39:5000/user/login',loginDetails).then(response => {
+    axios.post('http://localhost:5000/user/login',loginDetails).then(response => {
         if(response.status === 200){
             localStorage.setItem('token', response.data.token);
             localStorage.setItem('userDetails', JSON.stringify(response.data.user))
-            // window.location.href = "../ExpenseTracker/index.html" // change the page on successful login
+            window.location.href = "../sms/sms.html" 
+            
         } else {
             throw new Error('Failed to login')
         }
     }).catch(err => {
         document.body.innerHTML += `<div style="color:red;">${err} <div>`;
     })
-}
-function forgotpassword() {
-    window.location.href = "../ForgotPassword/index.html"
 }

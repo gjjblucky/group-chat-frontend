@@ -12,7 +12,7 @@ function signup(e) {
 
     }
     console.log(signupDetails)
-    axios.post('http://localhost:4000/user/signup',signupDetails).then(response => {
+    axios.post('http://localhost:5000/user/signup',signupDetails).then(response => {
         
         if(response.status === 201){
             // alert('signup successfull')
